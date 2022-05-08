@@ -34,6 +34,12 @@ html {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .hide {
+    display: none;
+  }
+}
+
 
 canvas {
   position: absolute;
