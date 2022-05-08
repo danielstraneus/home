@@ -50,6 +50,9 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .body {
+    white-space: nowrap;
+  }
 }
 
 canvas {
