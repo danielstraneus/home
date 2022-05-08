@@ -50,7 +50,7 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body {
+  body {
     white-space: nowrap;
   }
 }
