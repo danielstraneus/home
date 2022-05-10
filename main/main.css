@@ -206,7 +206,6 @@ br::selection {
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   --animate-duration: 1s;
-  text-decoration: line-through;
 }
 
 #link4 {
