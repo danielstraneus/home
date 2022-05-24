@@ -291,4 +291,10 @@ br::selection {
           animation-delay: 0.85s;
   --animate-duration: 1s;
 }
+
+#link18 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  --animate-duration: 1s;
+}
 /*# sourceMappingURL=main.css.map */
