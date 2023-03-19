@@ -2,56 +2,11 @@
   --main: #282725;
   --secondary: #e9e7e7;
   --bg: #879090;
-
   --gutter-small: 1.3em;
 }
 
-/* teal before  #4d7a77 */
-
-/* alpha pink: rgb(241, 146, 135) */
-/* og bg mint ish:  --bg: rgb(187, 215, 188) */
-/* og text: rgb(120, 120, 120); */
-
-/* teal: #317773; */
-
-/* uno: #fef9f7 */
-/* dos: #1aa9bc */
-/* tres: #ffeb00 */
-/* quatro: #457c39 */
-
-/* gunmetal: #2A2D34  */
-/* shamrock green: #009B72 */
-/* pine green: #136F63 */
-/* jade: #57A773 */
-/* reseda green: #758173 */
-/* fern green: #4A7856 */
-/* ghost white: #FBFBFF */
-/* rich black: #131B23 */
-
-/* jasmine: #F4D58D */
-/* taupe: #939196 */
-/* mint: #63A375 */
-
-/* vanilla: #F0DFAD */
-/* rasperry: #AA4465 */
-
-/* apricot: #FFCAB1 */
-/* dutch: #ECDCB0 */
-
-/* hooker green: #426A5A */
-
-/* light coral: #EF6F6C */
-/* peach: #FFB997 */
-
-/* mint green: #DAFFED */
-
-/* amaranth pink: #E08DAC */
-/* ghost pinkwhite:  #EDEDF4*/
-/* indian red: #E15554 */
-/* indian red2: #C97064 */
-/* misty rose: #F4DBD8 */
-/* timberwolf: #D6CFCB */
-/* mounbatten pink: #A6808C */
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-std");
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
 
 ::-webkit-scrollbar {
   display: none;
@@ -61,38 +16,12 @@ img {
   z-index: -10000;
   filter: saturate(0%);
   opacity: 0.04;
-  width: 100vw;
-  height: 100vh;
-}
-
-@font-face {
-  font-family: "neue-black";
-  src: url("./neue-haas-grotesk/NHaasGroteskDSPro-95Blk.otf");
-}
-
-@font-face {
-  font-family: "neue-bold";
-  src: url("./neue-haas-grotesk/NHaasGroteskDSPro-75Bd.otf");
-}
-@font-face {
-  font-family: "neue-medium";
-  src: url("./neue-haas-grotesk/NHaasGroteskDSPro-65Md.otf");
-}
-@font-face {
-  font-family: "neue-regular";
-  src: url("./neue-haas-grotesk/NHaasGroteskDSPro-55Rg.otf");
-}
-@font-face {
-  font-family: "neue-regular-txt";
-  src: url("./neue-haas-grotesk/NHaasGroteskTXPro-55Rg.otf");
-}
-@font-face {
-  font-family: "neue-thin";
-  src: url("./neue-haas-grotesk/NHaasGroteskDSPro-35XLt.otf");
+  width: 110vw;
+  height: 110vh;
 }
 
 html {
-  overflow-y: hidden;
+  overflow: scroll;
 }
 
 body {
@@ -107,14 +36,7 @@ body {
   color: white;
   background-color: rgb(93, 61, 61);
 }
-h1 {
-  font-size: 2em;
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: -4px;
-  color: var(--main);
-  line-height: 3rem;
-}
+
 h2,
 h3,
 p,
@@ -126,14 +48,16 @@ p,
 
 p {
   margin-bottom: -4px;
-  font-family: "neue-regular-txt";
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
   font-size: 0.9rem;
   line-height: normal;
+  font-weight: 100;
 }
 
 h2,
 h3 {
-  font-family: "neue-regular-txt";
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
+  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -145,7 +69,7 @@ h3 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 0.6fr repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(6, minmax(0, 1.1fr)) 0.8fr 1fr;
   gap: var(--gutter-small);
   height: 100vh;
@@ -185,15 +109,16 @@ h3 {
   width: 160px;
   margin-bottom: -4px;
   position: absolute;
-  font-family: "neue-regular-txt";
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
   font-size: 0.9em;
   animation: fade 2s ease-in-out;
 }
 
 .links-title h2,
 .archive-title {
-  font-family: "neue-bold";
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-size: 1em;
+  font-weight: 700;
   margin-top: 0px;
   color: var(--secondary);
 }
@@ -416,7 +341,7 @@ a {
 }
 
 .link {
-  font-family: "neue-bold";
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   display: block;
   color: var(--main);
   transition: 0s;
@@ -426,8 +351,8 @@ a {
   text-align: start;
   z-index: 3000;
   width: 200px;
-
-  /* font-size: 1em; */
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 ul li:nth-of-type(1) {
@@ -535,9 +460,9 @@ ul li i:after {
   transition: 0.5s ease-in-out;
 }
 .wrapper a {
-  font-family: "neue-regular-txt";
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
   font-size: 1rem;
-
+  font-weight: 500;
   color: var(--main);
   z-index: 100000;
 }
@@ -1068,9 +993,9 @@ ul li i:after {
   position: absolute;
   opacity: 1;
   margin-top: 18rem;
-  margin-left: 13rem;
-  height: 250px;
-  width: 250px;
+  margin-left: 10rem;
+  height: 200px;
+  width: 200px;
   z-index: -1;
   transform: rotate(-360deg);
 
@@ -1101,9 +1026,9 @@ ul li i:after {
   position: absolute;
   opacity: 0;
   margin-top: 18rem;
-  margin-left: 13rem;
-  height: 250px;
-  width: 250px;
+  margin-left: 10rem;
+  height: 200px;
+  width: 200px;
   z-index: 0;
   transform: rotate(-360deg) scale(0.7);
   filter: brightness(90%) contrast(200%) blur(3.3px) saturate(10%)
@@ -1170,7 +1095,7 @@ a {
 }
 
 .item-info-active {
-  font-family: "neue-regular-txt";
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
   width: 200px;
   font-size: 0.9rem;
   opacity: 1;
@@ -1236,8 +1161,9 @@ a {
 }
 
 h1 {
-  font-family: "neue-bold", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-size: 2.5rem;
+  font-weight: 700;
   padding: 0px;
   color: var(--main);
   line-height: 2rem;
