@@ -16,7 +16,7 @@ img {
   z-index: -10000;
   filter: saturate(0%);
   opacity: 0.04;
-  width: 110vw;
+  width: 130vw;
   height: 110vh;
 }
 
@@ -73,7 +73,6 @@ h3 {
   grid-template-rows: repeat(6, minmax(0, 1.1fr)) 0.8fr 1fr;
   gap: var(--gutter-small);
   height: 100vh;
-
   width: 100vw;
   min-width: 500px;
   min-height: 750px;
@@ -83,7 +82,7 @@ h3 {
 
 .item {
   display: flex;
-  /* border: solid 0.1px var(--main); */
+  border: solid 0.1px var(--main);
   color: var(--main);
   padding: 0em;
   margin: 0px;
@@ -1100,7 +1099,7 @@ a {
   font-size: 0.9rem;
   opacity: 1;
   display: block;
-  margin-left: 12.5em;
+  margin-left: 12.9em;
   transition: opacity 0.3s ease-in-out;
 }
 .focus {
@@ -1215,4 +1214,20 @@ h1 {
 .open {
   display: block;
   position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0.2fr repeat(3, minmax(0, 1fr));
+    grid-template-rows: 0.4fr repeat(5, minmax(0, 0.8fr)) 0.8fr 1fr;
+    gap: var(--gutter-small);
+    height: 100vh;
+
+    width: 100vw;
+    min-width: 500px;
+    min-height: 750px;
+    max-width: 500px;
+    overflow-x: hidden;
+  }
 }
