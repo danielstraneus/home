@@ -67,8 +67,8 @@ h3 {
 
 .container {
   display: grid;
-  grid-template-columns: 0.6fr repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(6, minmax(0, 1fr)) 0.8fr 1fr;
+  grid-template-columns: 0.5fr repeat(3, minmax(0, 1fr));
+  grid-template-rows: 0.5fr repeat(6, minmax(0, 1fr)) 0.5fr 0.5fr;
   gap: var(--gutter-small);
   height: 100vh;
   width: 100vw;
@@ -1159,12 +1159,12 @@ a {
 
 h1 {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   padding: 0px;
   color: var(--main);
-  line-height: 1.9rem;
-  margin-bottom: -4px;
+  line-height: 1.7rem;
+  margin-bottom: -5px;
 }
 
 .a-canvas.a-grab-cursor:hover {
